@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
             if (zmienna == 2)
                 imageButton.setImageResource(R.drawable.kosmos)
             zmienna++
-            zmienna%=3 
+            zmienna%=3
         }
     }
 }
