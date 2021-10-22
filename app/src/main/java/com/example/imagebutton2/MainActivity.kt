@@ -9,9 +9,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         var imageButton = findViewById<ImageButton>(R.id.imageButton)
+        var zmienna = 0
 
         imageButton.setOnClickListener {
-            imageButton.setImageResource(R.drawable.download)
+            if (zmienna == 0)
+                imageButton.setImageResource(R.drawable.download)
+            if (zmienna == 1)
+                imageButton.setImageResource(R.drawable.ksiezyc)
+            if (zmienna == 2)
+                imageButton.setImageResource(R.drawable.kosmos)
+            zmienna++
+            zmienna%=3 
         }
     }
 }
